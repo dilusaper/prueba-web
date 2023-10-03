@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content=""> <!-- Breve descripción de la inmobiliaria-->
+    <meta name="author" content="Diego Salazar">
+    <meta name="date" content=""> <!-- Fecha de publicación-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inmobiliaria BELÉN</title>
+    <link rel="icon" href="images/logo.png" type="image/png"> <!-- Logo de la pagina en el buscador-->
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <script src="js/scripts.js" type="text/javascript" async></script>
+</head>
+<body>
+    <header></header>
+    
+<section class="producto">    <!-- Slideshow container -->
+<!-- Images used to open the lightbox -->
+    <section class="scroll-container">
+        <img src="images/prueba1.jpeg" onclick="openModal();currentSlide(1)">
+        <img src="images/prueba2.jpeg" onclick="openModal();currentSlide(2)">
+        <img src="images/prueba3.jpeg" onclick="openModal();currentSlide(3)">
+        <img src="images/prueba5.jpeg" onclick="openModal();currentSlide(4)">
+    </section>
+
+    <!-- The Modal/Lightbox -->
+    <section id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <section class="modal-content">
+        <img class="mySlides" src="images/prueba1.jpeg">
+        <img class="mySlides" src="images/prueba2.jpeg">
+        <img class="mySlides" src="images/prueba3.jpeg">
+        <img class="mySlides" src="images/prueba5.jpeg">
+        </section>
+    </section>
+
+    <section class="detalles_inmuebles">
+
+        <section>
+            <form action="">
+                <p>
+                    <label for="nombre_t">Nombre</label>
+                    <input type="text" required>
+                </p>
+                <p>
+                    <label for="correo_t">Correo</label>
+                    <input type="email" required>
+                </p>
+                <p>
+                    <label for="ID_inmueble">ID del inmueble</label>
+                    <input type="number" required>
+                </p>
+                <p>
+                    <label for="fecha_visita_e">Fecha de visita al inmueble</label>
+                    <input type="date" required>
+                </p>
+                
+                <input type="submit" value="ENVIAR">
+            </form>
+        </section>
+
+    </section>
+</section>    
+    <footer></footer>
+</body>
+</html>
